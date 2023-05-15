@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Splice Method</h1>
+    <script>
+        var a = ["tejas", "rushi", "jaywant"];
+        var addSecondElement = a.splice(2, 0, "harish");
+        document.write(a);
+
+        document.write("<br>");
+        var a = ["tejas", "rushi", "jaywant"];
+        var removeSecondElement = a.splice(0, 1, "harish");
+        document.write(a);
+
+        document.write("<br>");
+        var a = ["tejas", "rushi", "jaywant"];
+        var reElement = a.splice(2, 2, "rahul", "atul");
+        document.write(a);
+
+        document.write("<br>");
+        var a = ["tejas", "rushi", "jaywant"];
+        var reElement = a.splice(2, 0, "rahul", "atul");
+        document.write(a);
+
+        document.write("<br>");
+        var a = ["tejas", "rushi", "jaywant"];
+        var res = a.splice(2);
+        document.write(a);
+    </script>
+</body>
+
+</html>

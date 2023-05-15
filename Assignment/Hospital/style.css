@@ -1,0 +1,403 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    
+    .container {
+        margin: 0 90px;
+    }
+    /* navbar */
+    
+    .head {
+        width: 100%;
+        height: 80px;
+        /* background-color: #333; */
+        /* position: -webkit-sticky; */
+        /* position: sticky;
+    top: 0; */
+        /* background-color: #e9ecef; */
+        /* box-shadow: 100px 0 black; */
+    }
+    
+    .head img {
+        height: 60px;
+        margin: 15px 95px;
+    }
+    
+    .link {
+        display: flex;
+        float: right;
+        padding: 25px 60px;
+        list-style: none;
+        gap: 30px;
+    }
+    
+    .list a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .list a:hover {
+        /* color: aquamarine; */
+        text-decoration: underline 2px black;
+    }
+    /* home */
+    
+    .header {
+        /* background-color: blue; */
+        /* background-image: url(/Hospital//img/home1.jpg); */
+        background-size: 1600px;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 700px;
+        /* padding-left: 10px;
+    padding-top: 170px; */
+        letter-spacing: 3px;
+        display: flex;
+    }
+    
+    .text {
+        margin-top: 110px;
+        margin-left: 150px;
+    }
+    
+    .text>h1 {
+        font-size: 70px;
+        font-weight: bold;
+    }
+    
+    .text p {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    
+    .text .btn {
+        margin-top: 20px;
+        margin-right: 7px;
+        padding: 12px;
+        border-radius: 5px;
+        background-color: #2a6f97;
+        color: #ffff;
+        border: 1px white;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+    
+    .text .btn:hover {
+        background-color: white;
+        color: black;
+        text-decoration: underline 2.5px solid black;
+        transform: scale(1.04);
+    }
+    
+    .headimg img {
+        height: 650px;
+        width: 900px;
+        margin-top: 20px;
+        /* margin-right: 70px; */
+    }
+    /* about */
+    
+    .about {
+        margin: 60px 0;
+        height: 400px;
+        /* width: 100%; */
+        /* background-color: blueviolet; */
+        display: flex;
+    }
+    
+    .about1 {
+        /* padding: 90px 200px; */
+        margin-left: 190px;
+        margin-top: 70px;
+    }
+    
+    .about1 h3 {
+        font-size: 35px;
+        /* color: red; */
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    
+    .about1 p {
+        font-size: 20px;
+        /* margin: 10px 0; */
+    }
+    
+    .about1 ul {
+        margin: 5px 70px;
+    }
+    
+    .about1 li {
+        padding: 4px;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    /* .about img {} */
+    /* service */
+    
+    .service {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .service>p {
+        color: #386641;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .service>h2 {
+        margin-top: 10px;
+        font-size: 35px;
+        text-transform: uppercase;
+        line-height: 40px;
+        color: #223645;
+        text-align: center;
+    }
+    
+    .ser {
+        display: flex;
+        margin-left: 30px;
+    }
+    
+    .box {
+        height: 400px;
+        width: 400px;
+        /* background-color: rgb(138, 31, 31); */
+        margin: 40px;
+        display: flex;
+        border-radius: 15px;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .box img {
+        height: 230px;
+        width: 100%;
+        border-radius: 15px;
+        transition: 1s ease;
+    }
+    
+    .box img:hover {
+        transform: scale(1.2);
+    }
+    
+    .box h2 {
+        font-size: 35px;
+        margin-top: 6px;
+        font-weight: bold;
+    }
+    
+    .box p {
+        font-size: 17px;
+        margin-top: 7px;
+    }
+    
+    .box button {
+        padding: 10px 20px;
+        background-color: #2a6f97;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+    
+    .box button:hover {
+        background-color: black;
+        color: white;
+        text-decoration: underline 2px solid black;
+        transform: scale(1.04);
+    }
+    /* appointment */
+    
+    .app {
+        height: 700px;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+    }
+    
+    .apphead p {
+        text-align: center;
+        color: #386641;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .apphead h2 {
+        text-align: center;
+        margin: 5px 0;
+        font-size: 30px;
+        line-height: 40px;
+        color: #223645;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .app .form {
+        height: 650px;
+        width: 700px;
+        background-color: white;
+        margin: 40px 80px;
+        padding: 15px 25px;
+    }
+    
+    .form span {
+        font-size: 18px;
+        margin: 25px 0;
+        font-weight: 600;
+    }
+    
+    .form input {
+        display: flex;
+        /* flex-wrap: wrap; */
+        width: 70%;
+        padding: 9px 10px;
+        margin: 7px 0;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    
+    .form button {
+        padding: 12px;
+        width: 70%;
+        margin: 15px 0;
+        background-color: #2a6f97;
+        color: white;
+        border: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+    
+    .form button:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.04);
+    }
+    
+    .form-img img {
+        margin-top: 80px;
+        height: 600px;
+        width: 600px;
+    }
+    
+    .section {
+        height: 400px;
+        width: 100%;
+        /* background-color: antiquewhite; */
+        display: flex;
+    }
+    
+    .section-img img {
+        height: 400px;
+        width: 500px;
+        margin-right: 25px;
+    }
+    
+    .para {
+        margin: 40px 40px;
+        padding: 45px 35px;
+    }
+    
+    .para h3 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .para p {
+        margin-top: 12px;
+        font-size: 19px;
+    }
+    
+    .para button {
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+        background-color: #2a6f97;
+        color: white;
+        border: none;
+        transform: 0.5s;
+    }
+    
+    .para button:hover {
+        background-color: black;
+        color: white;
+        transform: scale(1.04);
+    }
+    /* footer */
+    
+    .footer {
+        height: 600px;
+        width: 100%;
+        /* background-color: #223645; */
+        padding: 20px 0;
+    }
+    
+    .footer img {
+        height: 400px;
+        width: 900px;
+        margin-left: 220px;
+        margin-top: 15px;
+    }
+    
+    .f h2 {
+        font-size: 35px;
+        color: #2a6f97;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .f p {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 250px;
+    }
+    
+    .footer1 {
+        width: 100%;
+        height: 400px;
+        background-color: #dbe7ee;
+        display: flex;
+    }
+    
+    .footer1 img {
+        height: 350px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    
+    .footer1 ul {
+        list-style: none;
+        margin: 100px 50px;
+    }
+    
+    .footer1 li {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    
+    .footer1 ul li img {
+        height: 70px;
+        width: 190px;
+    }
+    /* reasponsive for mobile */
+    
+    @media screen and (max-width:1125px) {
+        /* navbar */
+        .link {
+            display: none;
+        }
+    }

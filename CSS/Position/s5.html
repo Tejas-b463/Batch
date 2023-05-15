@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* relative : it position according to the normal flow of the docuement and the offset relative it self vase it does not affect the postion of any other elements */
+        /* absoult : its remove the from normal flow document flow and no space is created for element in the page layout it position relative to its closest ancestore */
+        
+        #d1 {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            position: relative;
+        }
+        
+        #d2 {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 100px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        first
+        <div id="d2">
+            Something
+        </div>
+    </div>
+</body>
+
+</html>

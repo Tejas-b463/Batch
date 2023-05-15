@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            animation-name: back;
+            animation-duration: 3s;
+            color: black;
+        }
+        
+        @keyframes back {
+            0% {
+                color: red;
+            }
+            30% {
+                color: aqua;
+                font-size: 70px;
+            }
+            50% {
+                color: yellow;
+                font-size: 50px;
+            }
+            70% {
+                color: chartreuse;
+                font-size: 100px;
+            }
+            100% {
+                color: aliceblue;
+                font-size: 15px;
+            }
+        }
+        
+        #d2 {
+            padding: 15px 0;
+            animation-name: back1;
+            animation-duration: 3s;
+            color: black;
+        }
+        
+        @keyframes back1 {
+            0% {
+                color: rgb(0, 255, 51);
+            }
+            30% {
+                color: rgb(213, 14, 190);
+            }
+            50% {
+                color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">Hello</div>
+    <div id="d2">Something</div>
+</body>
+
+</html>

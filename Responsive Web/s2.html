@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .column {
+            background-color: aquamarine;
+            height: 200px;
+            width: 400px;
+            float: left;
+            padding: 15px;
+        }
+        
+        .column:first-child {
+            margin-right: 4%;
+        }
+        
+        @media screen and (max-width:845px) {
+            .column {
+                float: none;
+                background-color: red;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam voluptatem sed impedit ipsum perspiciatis doloribus mollitia non quam est repellat, quo soluta obcaecati corrupti eligendi aliquid provident sint exercitationem.</p>
+        </div>
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusantium sit ut a neque fugit magni quis quisquam aliquid voluptatibus excepturi nostrum porro nesciunt saepe dolorem sed doloribus et repudiandae.</p>
+        </div>
+    </div>
+</body>
+
+</html>

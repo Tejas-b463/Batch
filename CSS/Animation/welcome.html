@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            margin-left: 450px;
+            margin-top: 300px;
+        }
+        
+        ul>li {
+            font-size: 60px;
+            letter-spacing: 10px;
+            font-family: sans-serif;
+            color: white;
+            text-shadow: 1px 1px 4px white;
+            animation-name: pack;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        
+        @keyframes pack {
+            0% {
+                color: red;
+            }
+            25% {
+                color: yellow;
+                transform: translate(-50px);
+                letter-spacing: 35px;
+                opacity: 0.5;
+            }
+            70% {
+                transform: translate(50px);
+                color: black;
+                opacity: 0.3;
+            }
+            100% {
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>W</li>
+        <li>E</li>
+        <li>L</li>
+        <li>C</li>
+        <li>O</li>
+        <li>M</li>
+        <li>E</li>
+    </ul>
+</body>
+
+</html>

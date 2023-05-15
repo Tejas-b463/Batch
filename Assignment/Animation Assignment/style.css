@@ -1,0 +1,60 @@
+body {
+    background-image: url("/img/maxresdefault.jpg");
+    background-size: 1520px;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+}
+
+.animation img {
+    height: 200px;
+    margin-top: 250px;
+}
+
+.bird img {
+    height: 200px;
+    margin-top: 100px;
+}
+
+.animation {
+    animation-name: back;
+    animation-duration: 30s;
+    /* animation-delay: 3s; */
+    position: relative;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes back {
+    0% {
+        left: 0px;
+    }
+    30% {
+        left: 1500px;
+    }
+    /* 50% {
+        left: 600px;
+    }
+    70% {
+        left: 800px;
+    }
+    100% {
+        left: 1000px;
+    } */
+}
+
+.bird {
+    animation-name: back;
+    animation-duration: 15s;
+    /* animation-delay: 3s; */
+    position: relative;
+}
+
+@keyframes back {
+    0% {
+        left: 0px;
+    }
+    30% {
+        left: 1500px;
+    }
+}

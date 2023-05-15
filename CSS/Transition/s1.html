@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 30px;
+            background-color: aqua;
+            transition: width 3s;
+        }
+        
+        #d1 {
+            transition-timing-function: ease;
+        }
+        
+        #d2 {
+            transition-timing-function: ease-in;
+        }
+        
+        #d3 {
+            transition-timing-function: ease-out;
+        }
+        
+        #d4 {
+            transition-timing-function: ease-in-out;
+        }
+        
+        div:hover {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="d1"></div>
+    <br>
+    <div id="d2"></div>
+    <br>
+    <div id="d3"></div>
+    <br>
+    <div id="d4"></div>
+
+</body>
+
+</html>
+
+<!-- 
+    ease
+    :efect with slow start then fast,then end slowly
+    liner
+    ease-in
+    : effect with a slow start
+    ease-out
+    : effect alow end
+    ease-in-out
+    :ease-in-out
+    :effect with slow start  nd end
+
+ -->

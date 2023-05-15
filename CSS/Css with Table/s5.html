@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style-table {
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .style-table thead tr {
+            background-color: aqua;
+            color: black;
+            text-align: left;
+        }
+        
+        .style-table th,
+        .style-table td {
+            padding: 12px 15px;
+        }
+        
+        .style-table tbody tr {
+            border-bottom: 1px solid rgb(116, 97, 97);
+        }
+        
+        .style-table tbody tr:nth-of-type(even) {
+            background-color: aquamarine;
+        }
+        
+        .style-table tbody tr:nth-last-of-type(1) {
+            border-bottom: 5px solid aquamarine;
+        }
+        
+        tfoot tr th {
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="style-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Total Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="active">
+                <td>Tejas</td>
+                <td>80</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Rushi</td>
+                <td>70</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Hari</td>
+                <td>60</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>@ table here</th>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>String Method</h1>
+    <script>
+        // CharAt
+        // it provide the char value present at the specified index
+        var a = "Seven Seven Mentor";
+        document.write("<br> Length of string : " + a.charAt(2));
+        document.write("<hr>");
+
+        // indexOf
+        // it provies the position of char value present in the giving string
+        document.write("<br> Index of string : ", a.indexOf('v'));
+        document.write("<hr>");
+
+        document.write("<br> Index of string : ", a.indexOf('e', 2));
+        document.write("<hr>");
+
+        document.write("<br> Index of string : ", a.indexOf('sev'));
+        document.write("<hr>");
+
+        // lastindexOf
+
+        document.write("<br> Last Index of string : ", a.lastIndexOf('v'));
+        document.write("<hr>");
+
+        document.write("<br> Last Index of string : ", a.lastIndexOf('v', 2));
+        document.write("<hr>");
+
+        var s = "sevenven seven mentor";
+        document.write("<br> Last Index of string : ", s.lastIndexOf('v', 6));
+        document.write("<hr>");
+
+
+        // lowerCase
+        var name = "VAMOS";
+        document.write(name.toLowerCase());
+        document.write("<hr>");
+
+        // upperCase 
+        var name1 = "ole ole";
+        document.write(name1.toUpperCase());
+        document.write("<hr>");
+
+        // conCat
+        var firstName = "Tejas";
+        var lastName = "Banait";
+        // document.write("<br>", firstName.concat(lastName));
+        var fullName = firstName + lastName;
+        document.write("<br>", fullName);
+        document.write("<hr>");
+
+        // slice
+        // slice method return the part of string from given begin index to end index
+        var name = "meenaKumari";
+        document.write("<br>", name.slice(5, 11));
+        document.write("<hr>");
+
+        // slice in array
+
+        var arr = ["dddd", "pppp", "menakumari"];
+        document.write("<br> Array Slice : " + arr[2].slice(4, 10));
+        document.write("<hr>");
+
+
+        // trim
+        var num = "  Hello  ";
+        document.write("<br> with space length of string :");
+        document.write(num.length);
+        document.write("<hr>");
+        var trimString = num.trim();
+        document.write(trimString);
+        document.write("<hr>");
+        var num1 = num.trim();
+        document.write("<br>", num1.length);
+        document.write("<hr>");
+        document.write(num + "gg");
+        document.write("<br>", num.trim());
+        document.write(num1 + "gg");
+        document.write("<hr>");
+
+
+        // // trimstart
+
+        // var trimStart = "  Hello  ";
+        // document.write(trimStart.trimStart());
+        // document.write("<hr>");
+
+        // // trimEnd
+
+        // var trimEnd = "  Hello  ";
+        // document.write(trimStart.trimEnd());
+
+        // split
+
+        var home = "welcome to my home";
+        document.write("<br> Split : ", home.split(" "));
+        var h = "welcome-to-my-home";
+        document.write("<br>", h.split("-"));
+        document.write("<hr>");
+
+        // subString
+
+        var home1 = "welcome to my home";
+        document.write("<br>SubString : ", home1.substring(3, 10));
+    </script>
+</body>
+
+</html>
