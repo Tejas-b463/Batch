@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <h1>String</h1>
+    <input type="number" name="number" id="demo"> <br><br>
+    <input type="submit" value="Submit" onclick="addNumber()">
+
+
     <script>
-        // string is sequence of character.
-        var a = "Seven Mentor";
-        var b = 'tejas.dev';
-        document.write(b);
-        var len = a.length;
-        document.write(len);
+        function addNumber() {
+            var num = document.getElementById("demo").value;
+            alert(num * num);
+
+        }
     </script>
 </body>
 
