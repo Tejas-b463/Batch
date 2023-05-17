@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Add Event Listner</h1>
+
+    <input type="text" onkeydown="show()" id="btn" placeholder="Enter Name">
+
+
+
+    <script>
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", change);
+
+        function change() {
+            btn.style.background = "red";
+        }
+    </script>
+</body>
+
+</html>
