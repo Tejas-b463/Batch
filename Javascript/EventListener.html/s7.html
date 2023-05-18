@@ -9,19 +9,24 @@
 </head>
 
 <body>
-    <input type="text" id="d1" placeholder="Enter Name" onkeydown="show()" onkeyup="show1()">
+    <input type="text" id="d1" placeholder="Enter Name">
 
     <script>
-        var d1 = document.getElementById("d1");
+        let d1 = document.getElementById("d1");
+
+
 
         function show() {
-            document.getElementById("d1").style.background = "red"
+            document.getElementById("d1").style.background = "red";
         }
 
         function show1() {
-            document.getElementById("d1").style.background = "";
+            document.getElementById("d1").style.background = '';
         }
+        d1.addEventListener('keydown', show);
+        d1.addEventListener('keyup', show1);
     </script>
 </body>
+
 
 </html>
