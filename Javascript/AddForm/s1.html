@@ -17,7 +17,14 @@
     </form>
 
     <script>
-        var data = "<h1>Fill this form</h1> <br><br>"
+        var btn = document.getElementById("d1");
+
+
+
+        btn.addEventListener("click", function() {
+            var data = `<h1>Fill this form</h1> <br><br>`
+            document.write(data);
+        })
     </script>
 </body>
 
