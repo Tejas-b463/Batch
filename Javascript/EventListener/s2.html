@@ -9,18 +9,23 @@
 </head>
 
 <body>
-    <h1>Add Event Listner</h1>
+    <h1>Event Listener Example</h1>
 
-    <input type="text" onkeydown="show()" name="" id="" placeholder="Enter Name">
-    <input type="text" onkeyup="show()" name="" id="" placeholder="Enter Name">
-    <h1 id="d1"></h1>
+    <button id="btn">Hover Me</button>
 
     <script>
+        const btn = document.getElementById("btn");
+
+
+        btn.addEventListener("mouseover", show)
+
         function show() {
-            var name = document.getElementById("d1").innerHTML = "Welcome";
-            console.log(name);
+
+            btn.style.color = "green";
+            btn.style.backgroundColor = "black";
         }
     </script>
+
 </body>
 
 </html>
