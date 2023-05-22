@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 {
+            background-color: red;
+        }
+        
+        .d2 {
+            background-color: green;
+        }
+        
+        .d3 {
+            background-color: yellow;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        @media {}
+        
+        {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d1">text 1</div>
+        <div class="d2">text 2</div>
+        <div class="d3">text 3</div>
+    </div>
+</body>
+
+</html>
