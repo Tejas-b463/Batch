@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="validation()" name="myform">
+        Number:
+        <input type="text" name="number" placeholder="Enter the Number"> <br>
+        <span id="msg"></span>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validation() {
+            var num = document.myform.number.value;
+            if (isNaN(num)) {
+                document.getElementById("msg").innerHTML = "Enter Numberic Value";
+                document.getElementById("msg").style.color = "red";
+                return false;
+            } else if (num < 0) {
+                document.getElementById("msg").innerHTML = "Number is Positive Only"
+                document.getElementById("msg").style.color = "blue"
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

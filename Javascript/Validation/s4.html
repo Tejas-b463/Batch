@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" name="form" onsubmit="return validation()">
+        <input type="text" name="firstname" id="" placeholder="Enter Name"><br><br>
+        <input type="password" name="password" id="" placeholder="Password"> <br><br>
+        <span id="passmsg"></span>
+        <input type="password" name="confirmpassword" id="" placeholder="Confirm Password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validation() {
+            var name = document.form.firstname.value;
+            var pass = document.form.password.value;
+            var confirmpassword = document.form.confirmpassword.value;
+
+            if (name == null || name == "") {
+                alert("enter name is requiered");
+                return false;
+            } else if (pass.length < 8) {
+                document.getElementById("passmsg").innerHTML = "Password Should be 8 Character";
+                document.getElementById('passmsg').style.color = "red";
+                return false;
+            } else if (pass != confirmpassword) {
+                alert("password must be same");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
