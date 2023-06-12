@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="d1"></h1>
+
+    <script>
+        async function Show() {
+            let p1 = new Promise(function(res, rej) {
+                res("welcome to clsss")
+            });
+            document.getElementById("d1").innerHTML = await p1;
+            document.getElementById("d1").style.color = "red";
+        }
+        Show();
+    </script>
+    <!-- asynch make a funcion return promise
+    await make a functin wait for a promise -->
+</body>
+
+</html>
