@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <style>
+         div{
+             width: 200px;
+             padding: 20px;
+             border: 2px solid red;
+             background-color: aqua;
+             margin: 10px;
+         }
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    
+    <p>Welcome to my class</p>
+</div>
+
+ <button id="d1">Hide</button>
+ <button id="d2">show</button>
+ <button id="d3">Toggle</button>
+
+         <script>
+               $(document).ready(function(){
+
+                 $("#d1").click(function(){
+                     $("div").hide();
+                 })
+           
+                $("#d2").click(function(){
+                    $("div").show();
+                })
+ 
+                $("#d3").click(function(){
+                    $("div").toggle();
+                })
+
+               })
+          
+
+
+
+
+         </script>
+
+    
+</body>
+</html>
