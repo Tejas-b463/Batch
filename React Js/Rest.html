@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Rest Operator</h3>
+    <script>
+        let arr = ["tejas", "rushi", "harish", "jaywant", "rahul"]
+        let [a] = arr;
+        document.write(a + "<br>")
+        const [...x] = arr;
+        document.write(x + "<br>")
+        document.write(arr + "<br>")
+            // Rest of operator
+        const [, , ...y] = arr;
+        document.write(y)
+    </script>
+</body>
+
+</html>

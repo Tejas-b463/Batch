@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const employee = {
+        //     id: 1,
+        //     name: "Tejas",
+        //     email: "tejas234@gmail.com",
+        //     phone: 12345567,
+        //     age: 22
+        // }
+        // const {
+        //     name,
+        //     phone
+        // } = employee;
+        // document.write(name + "" + phone + "<br>");
+
+        // const emp = {
+        //     eid: 1,
+        //     ename: "Tejas",
+        //     eemail: "tejas234@gmail.com",
+        //     address: {
+        //         city: "pune",
+        //         state: "maharashtra",
+        //         country: "india"
+        //     },
+        //     ephone: 12345567,
+        //     eage: 22
+        // }
+        // const {
+        //     address: [{
+        //         city,
+        //         state
+        //     }]
+        // } = emp;
+        // document.write(city + "" + state + "<br>")
+
+        const company = {
+            name: "Seven Mentor",
+            email: "sevenmentor456@gmail.com",
+            location: ["pune", "pimpari", "mumbai"]
+        }
+        const {
+            location: [a]
+        } = company;
+        document.write(a + "<br>");
+        const {
+            location: [, ...i]
+        } = company;
+        document.write(i + "<br>");
+
+        const books = ["xyz", "abc", {
+            author: "xy",
+            price: 45
+        }, "pqu", "dfg"]
+        const [, , {
+            author,
+            price
+        }] = books;
+        document.write(author + "" + price + "<br>");
+
+
+        function getData({
+            name,
+            email
+        }) {
+            document.write(name + "<br>" + email)
+        }
+        getData(company);
+    </script>
+</body>
+
+</html>
