@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>protype</h2>
+    <script>
+        function employee(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+        employee.prototype.fullName = function() {
+            return this.firstName + " " + this.lastName;
+        }
+        var emp1 = new employee("teajs", "banait");
+        document.write(emp1.fullName());
+    </script>
+</body>
+
+</html>

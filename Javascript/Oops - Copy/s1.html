@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Class and Object</h1>
+    <script>
+        class employee {
+            data() {
+                // intialize the value
+                var id = 1;
+                var name = "tejas";
+                var salary = 3000;
+
+                console.log(id + name + salary)
+            }
+            show() {
+                console.log("join class");
+            }
+        }
+
+        // object creation
+
+        var emp = new employee();
+        emp.show();
+        emp.data();
+    </script>
+</body>
+
+</html>

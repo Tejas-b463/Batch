@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- multiple value to the  -->
+    <script>
+        function add(x, y, ...arg) {
+            let sum = x + y;
+            for (let i of arg) {
+                sum += i;
+            }
+            return sum;
+        }
+        console.log("Add :-", add(2, 3))
+        console.log("Add :-", add(2, 3, 5, 7, 4))
+    </script>
+</body>
+
+</html>

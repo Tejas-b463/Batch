@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Abstraction</h2>
+    <!-- hiding the data -->
+    <script>
+        function person(fname, lname) {
+            let firstName = fname;
+            let lastName = lname;
+
+            let getDetailsNoAccess = function() {
+                return (`first Name is :- ${firstName} and last Name is :- ${lastName}`)
+            }
+
+            this.getDetailsAccess = function() {
+                return (`first Name is :- ${firstName} and last Name is :- ${lastName}`)
+            }
+        }
+        var per = new person("vishal", "pande");
+        console.log(per.firstName);
+        console.log(per.getDetailsAccess());
+        console.log(per.getDetailsNoAccess)
+    </script>
+</body>
+
+</html>

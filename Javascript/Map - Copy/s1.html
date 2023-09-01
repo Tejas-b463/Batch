@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Map</h2>
+    <!-- Map holds the key value pairs it stores each element as key value pairs
+    it operatres the element such as search update and delete on the basis of specific key -->
+
+    <!-- 1. A map object can not contain the duplicates keys
+    2. A map object can contain the dublicate value
+    3. the key and value can be of any type (allow both object and primitive value) 
+    4. a map object itrates its element in instertion order -->
+    <script>
+        var map = new Map()
+        map.set(1, "tejas");
+        map.set(2, "rushi");
+        map.set(3, "harish");
+        map.set(3, "tejas");
+
+        var itr = map.entries();
+
+        document.write(itr.next().value + "<br>");
+        document.write(itr.next().value + "<br>");
+        document.write(itr.next().value + "<br>");
+        document.write(itr.next().value + "<br>");
+        document.write(itr.next().value + "<br>");
+
+        document.write("size of Map :- ", map.size)
+    </script>
+</body>
+
+</html>

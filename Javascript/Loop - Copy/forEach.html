@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>For Each Loop</h1>
+    <script>
+        var a = [2, 3, 5, 6, 8];
+        // for (var i = 0; i < a; i++) {
+        //     document.write("<br>", a[i]);
+        // }
+        var sum = 0;
+        a.forEach(function(i) {
+            sum = i + sum;
+            document.write("<br> " + sum);
+        });
+    </script>
+</body>
+
+</html>

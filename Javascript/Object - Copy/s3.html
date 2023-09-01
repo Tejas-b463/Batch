@@ -1,0 +1,35 @@
+<!-- using function constructore crete object -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function employee(i, name, salary) {
+            this.id = i;
+            this.name = name;
+            this.salary = salary
+        }
+
+        emp = new employee(111, "meena", 3000);
+
+        e = new employee(111, "heena", 3000);
+
+
+        document.write("id : " + emp.id + " <br> Name: " + emp.name + "<br> Salary:" + emp.salary);
+        document.write("<br><br>")
+        document.write("id : " + e.id + " <br> Name: " + e.name + "<br> Salary:" + e.salary);
+    </script>
+
+
+
+
+</body>
+
+</html>

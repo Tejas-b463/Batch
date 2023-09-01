@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Set</h1>
+    <!-- map.set(key,value) -->
+    <script>
+        var emp = new Map()
+        map.set(1, "meena");
+        map.set(2, "tejas");
+        map.set(3, "rushi");
+
+        var itr = map.entries();
+
+        var disp = (val, key) => {
+            document.write(itr.next().value + "<br>");
+        }
+        map.forEach(disp);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>sort Method</h1>
+    <script>
+        var a = ["c", "d", "a", "b"];
+        a.sort();
+        document.write(a);
+
+        document.write("<br>");
+
+        a.reverse();
+        document.write(a);
+
+        document.write("<br>");
+
+        var num = [2, 6, 3, 9];
+        num.sort();
+        document.write(num);
+
+        document.write("<br>");
+
+        num.reverse();
+        document.write(num);
+
+        document.write("<br>");
+
+
+        var num1 = [25, 11, 4, 12];
+        num1.sort(function(a, b) {
+            return a - b;
+            // return b - a;
+        })
+        document.write(num1);
+    </script>
+</body>
+
+</html>
